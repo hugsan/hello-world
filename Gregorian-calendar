@@ -1,0 +1,35 @@
+import java.util.GregorianCalendar;
+import java.util.Scanner;
+public class Week2_Problem4 {
+    public static void main (String[] args){
+
+       Scanner input = new Scanner(System.in);
+
+        long m = input.nextLong();
+        GregorianCalendar cal = new GregorianCalendar();
+        cal.setTimeInMillis(m);
+
+        int year = cal.get(GregorianCalendar.YEAR);
+        int month = cal.get(GregorianCalendar.MONTH);// 0 to 11
+        month++;
+        int day = cal.get(GregorianCalendar.DAY_OF_MONTH);
+
+        if(day<10) {
+            System.out.print("0" + day);
+        }
+        else{
+            System.out.print(day);
+        }
+
+        if(month<10){
+            System.out.print("/0" + month);
+        }
+        else{
+            System.out.print("/" + month);
+        }
+        System.out.print("/" + year);
+
+
+    }
+}
+

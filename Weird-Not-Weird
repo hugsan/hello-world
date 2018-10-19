@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class Week2_Problem5 {
+    public static void main(String[] args){
+         Scanner input = new Scanner(System.in);
+         int n = input.nextInt();
+
+         if(n%2!=0){
+             System.out.println("Weird");
+         }
+         else if(n%2==0 && n>2 &&n<10){
+             System.out.println("Not Weird");
+         }
+         else if(n%2==0 && n>11 &&n<30){
+             System.out.println("Weird");
+
+         }
+         else if (n>=30 && n%2==0){
+            System.out.println("Not Weird");
+
+        }
+
+
+
+    }
+
+}
